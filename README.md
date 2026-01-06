@@ -15,3 +15,31 @@ failures are surfaced for human review.
 📁 Implementation:
 - agents/confidence_scorer.py
 - engine/retry_controller.py
+
+## 🚀 Agentic API Testing Framework
+An autonomous system that moves beyond static test cases to reasoned API reliability.
+
+🧠 The Architecture: Planner–Executor–Evaluator
+Unlike traditional automation, this system utilizes a multi-agent loop:
+
+Planner: Analyzes OpenAPI specifications to determine critical paths.
+
+Generator: Produces executable pytest code.
+
+Executor: Runs tests in a deterministic environment.
+
+Analyzer (The "Brain"): If a test fails, the LLM performs a root-cause analysis to distinguish between a "flaky test" and a "real API bug."
+
+🛠️ Key Features
+Self-Healing Loop: Automatically suggests test updates when API contracts change.
+
+LLM Failure Reasoning: Detailed classification of errors (e.g., Logic vs. Infrastructure).
+
+Local LLM Support: Fully compatible with Ollama (Llama3/Mistral) for secure, enterprise environments.
+
+🚀 Getting Started
+Clone the repo: git clone https://github.com/pazhanipm91/agentic-api-testing.git
+
+Install deps: pip install -r requirements.txt
+
+Add your key to .env: OPENAI_API_KEY=your_key_here

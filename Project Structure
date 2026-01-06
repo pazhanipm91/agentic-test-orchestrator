@@ -1,0 +1,18 @@
+agentic-api-testing/
+│
+├── agents/
+│   ├── planner.py
+│   ├── test_generator.py
+│   ├── failure_analyzer.py   👈 analyze_failure()
+│   └── confidence_scorer.py  👈 confidence_score()
+│
+├── engine/
+│   ├── executor.py           👈 run_test()
+│   └── retry_controller.py   👈 retry loop
+│
+├── tests/
+│   └── generated_tests/
+│
+├── app.py                    👈 orchestrator
+├── requirements.txt
+└── README.md

@@ -1,0 +1,11 @@
+Planner Agent
+   ↓
+Test Generator Agent
+   ↓
+Test Executor (Pytest)
+   ↓
+Failure Analyzer Agent (LLM reasoning)
+   ↓
+Confidence Scorer
+   ↓
+Retry / Self-healing Loop

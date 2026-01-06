@@ -42,4 +42,4 @@ Clone the repo: git clone https://github.com/pazhanipm91/agentic-api-testing.git
 
 Install deps: pip install -r requirements.txt
 
-Add your key to .env: OPENAI_API_KEY=your_key_here
+## We used ENVIRONMENTS FILE for security
